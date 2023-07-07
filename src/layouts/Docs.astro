@@ -40,7 +40,7 @@ const {
               <h2 class="text-lg font-bold mt-8 py-2 px-4 dark:text-zinc-100">{section}</h2>
               {SIDEBAR_ITEMS[section as keyof typeof SIDEBAR_ITEMS].map((path) => (
                 <a href={path} 
-                  class={`relative block py-2 px-4 text-zinc-600 dark:text-zinc-400 hover:text-green-600 dark:hover:text-zinc-300 transition-colors
+                  class={`relative block py-2 px-4 text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-zinc-300 transition-colors
                     ${(Astro.url.pathname === path) && 'dark:!text-white after:content-[""] after:hidden md:after:block after:w-3 after:h-3 after:bg-zinc-200 dark:after:bg-zinc-700 after:absolute after:top-4 after:rotate-45 after:right-[-5.4rem]'}`}
                 >
                   {docs.find((doc) => path.endsWith(doc.slug))?.data.title}
@@ -99,12 +99,12 @@ const {
               break;
           }
           return <Heading class={className}>
-            <a href={`#${heading.slug}`} class="block py-1 text-zinc-600 dark:text-zinc-400 hover:text-green-600 dark:hover:text-zinc-300 transition-colors">
+            <a href={`#${heading.slug}`} class="block py-1 text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-zinc-300 transition-colors">
               {heading.text}
             </a>
           </Heading>
         })}
-        <span id="_hover" class="peer-hover:border-l-green-600 dark:peer-hover:border-l-zinc-400 display absolute h-8 border-l-2 border-transparent -translate-y-40 transition-all" aria-hidden="true"></span>
+        <span id="_hover" class="peer-hover:border-l-blue-600 dark:peer-hover:border-l-zinc-400 display absolute h-8 border-l-2 border-transparent -translate-y-40 transition-all" aria-hidden="true"></span>
         <span id="_active" class="hidden border-l-black dark:border-l-white display absolute h-8 border-l-2 border-transparent -translate-y-40 transition-all" aria-hidden="true"></span>
         <script>
           const headings = document.querySelectorAll("#_anchor h2, #_anchor h3, #_anchor h4, #_anchor h5, #_anchor h6");

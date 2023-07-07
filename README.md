@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/discord/805766973605937173" alt="discord">
   </a>
   <img src="https://img.shields.io/github/license/TheOtterlord/manual" alt="licensed under MIT">
-  <img src="https://img.shields.io/badge/lighthouse-400-brightgreen" alt="lighthouse score of 400">
+  <img src="https://img.shields.io/badge/lighthouse-400-brightblue" alt="lighthouse score of 400">
   <a href="https://developer.stackblitz.com/github/TheOtterlord/manual/tree/main">
     <img src="https://img.shields.io/badge/open%20in-stackblitz-blue" alt="open in stackblitz">
   </a>
